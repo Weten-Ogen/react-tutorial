@@ -3,48 +3,66 @@ import React from 'react';
 
 function App() {
   const AppStyle = {
-   margin:'0px',
-   padding:'1rem',
-   backgroundColor: 'black'
+    display:'flex',
+    flexWrap:'wrap',
   }
   return(
     <div style={AppStyle}>
-      <Helloworld person="Marcus"/>
-      <Helloworld person="Veronica"/>
-      <Greet name="Marcus"/>
-      <Greet name="Georgina"/>
+      <Bg color ={'red'}/>
+      <Bg/>
+      <Bg/>
+      <Bg/>
+      <Bg/>
+      <Bg/>
+    
     </div>
   );
 }
 export default App;
 
-const Greet = (props) =>{
-  const GreetStyle = {
-    color : 'blue',
-    fontSize: 20,
-    padding: 8,
+const Bg = (props) => {
+  const BgStyle= {
+    margin: '1rem',
+    padding: '0px',
+    width: '27%',
+    height:'55vh',
+    backgroundColor:'white',
+    boxShadow:"1px 1px 10px 1px black",
   }
   return (
-    <div style={GreetStyle}>
-       Greetings , { props.name}
+    <div 
+    style={BgStyle}
+    >
+    <Square/>
+    <Label/>
+
+
+    </div>
+  )
+}
+const Square = () => {
+  const SquareStyle = {
+    height:"40vh",
+    backgroundColor:'red',
+  }
+  return (
+    <div style={SquareStyle}>
     </div>
   )
 }
 
-const Helloworld = (props) => {
-  const HelloStyle = {
-    padding: 10,
-    fontSize:30,
-    color:'red',
-
-  
+const Label = () => {
+  const LabelStyle = {
+    textAlign: 'center',
+    fontSize : '24px',
   }
   return (
+    <div style={LabelStyle}>
+      <p>#0000EF</p>
+     
     
-    <div style={HelloStyle}>
-    Hello World to you {props.person}
     </div>
-  );
+  )
 }
 
 
