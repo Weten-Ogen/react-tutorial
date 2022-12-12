@@ -1,0 +1,68 @@
+::before,
+::after,
+* {
+    margin:0;
+    box-sizing: border-box;
+}
+
+ a ,ul > li{
+    list-style-type:none;
+    text-decoration: none;
+}
+header{
+    box-shadow: 0 0 15px 0  black;
+    height: 13vh;
+    margin-bottom:20px;
+    font-size: 3rem;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+img{
+    margin-right: auto;
+    width: 40px;
+}
+
+ul {
+    display : flex;
+    
+}
+
+ul > li {
+    margin : 10px;
+}
+ul > li > a{
+    text-transform: capitalize;
+    font-size: 25px;
+}
+footer {
+    position:absolute;
+    bottom: 0;
+    font-size: 30px;
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Main */
+main {
+    width: 210px;
+    margin : 20px;
+}
+main > img {
+    width : 200px;
+}
