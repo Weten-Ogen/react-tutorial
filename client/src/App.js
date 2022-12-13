@@ -1,6 +1,10 @@
 import './App.css';
 import Logo from './logo512.png';
-import Person from './hermione.jpg';
+import Person2 from  './gryffindor.png';
+import Person1 from './hermione.jpg';
+import Person3 from  './gryffindor2.png';
+import Person4 from  './hufflepuff.png';
+import Person5 from  './cho.jpg';
 
 function Header(){
   return (
@@ -16,38 +20,22 @@ function Header(){
     </header>
   )
 }
-function Main(){
+function Main({person, name}){
   return (
-    <main>
-      <img src={Person} alt=''/>
-      <p className='name'>hermione granger</p>
-      <p className='job'>wizard</p>
-      <form>
-        <button type='email' id='email'>email</button>
-        <button id='resume'>resume</button>
-      </form>
-      <section>
-        <article className='about'>
-        <h3>about</h3>
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum incidunt, sit qui commodi quod possimus quaerat deleniti, nesciunt harum non eos numquam </p>
-        </article>
-        <article className='achievements'>
-        <h3>achievements</h3>
-        <p>repudiandae quidem nulla mollitia recusandae ab doloremque magnam ad, accusantium vitae officia non facere quasi nobis aspernatur similique corporis quae eos dolore omnis minima! Dolores repudiandae quod illo </p>
-        </article>
-      </section>
-
-    </main>
+    <div className='main-container'>
+      <main className='main-sec'>
+      <img src={person} alt=''/>
+        <h3 className='name'>{name}</h3>
+        <h4 className='job'>wizard</h4>
+        <form className='main-form'>
+          <button type='email' id='email'>email</button>
+          <button id='resume'>resume</button>
+        </form>
+      </main>
+    </div>
   )
 }
 
-function Footer(){
-  return (
-    <footer>
-      <small> copyrights reserved </small>
-    </footer>
-  )
-}
 
 
 
@@ -56,8 +44,14 @@ function App() {
   return(
     <div>
       <Header/>
-      <Main/>
-      <Footer/>
+      <div className='app-main-container'>
+        <Main person = {Person1} name='hermione granger'/>
+        <Main person = {Person2} name='gryffindor'/>
+        <Main person = {Person3} name='gryffindor2'/>
+        <Main person={Person4} name='hufflepuff'/>
+        <Main person={Person5} name='ravenclaw'/>
+      </div>
+     
     </div>
   )
 }
