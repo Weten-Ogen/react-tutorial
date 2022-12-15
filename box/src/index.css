@@ -1,0 +1,22 @@
+
+
+.box {
+    width: 250px;
+    height: 250px;
+    margin:15px;
+    display: inline-block;
+    margin-right:5px;
+    border-radius: 6px;
+    background-color: gray;
+}
+.form-name{
+    text-transform: capitalize;
+    margin :10px;
+    font-size: 32px;
+}
+form > input{
+    height: 24px;
+    padding:8px 16px;
+    margin: 5px 10px;
+   
+}
