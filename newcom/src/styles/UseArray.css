@@ -1,0 +1,39 @@
+.main-container{
+    text-align: center;
+    width: 100%;
+    background-color:blueviolet;
+    height: 100vh;
+    text-align: center;
+}
+
+.person{
+    width: 60%;
+    margin: 0 auto;
+    padding: 16px 32px;
+    text-transform:capitalize;
+}
+.person h4{
+    display: inline;
+    margin:10px auto 10px 0;
+    font-size: 3rem;
+    padding: 8px 16px; 
+}
+
+.person{
+    display: flex;
+}
+
+.remove-btn{
+    font-size:15px;
+    background-color: rgb(9, 200, 248);
+    color:rgb(104, 11, 11);
+}
+.main-container button{
+    font-size: 23px;
+    padding:16px 32px;
+    margin-top: 10px;
+    border: none;
+    background-color: rgb(211, 9, 9);
+    color:rgb(9, 248, 236);
+    border-radius: 11px;
+}
