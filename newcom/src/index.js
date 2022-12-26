@@ -6,6 +6,9 @@ import './styles/UseOb.css';
 import './styles/Error.css';
 import './styles/UseArray.css';
 import './styles/Counter.css';
+import './styles/shortcircuit.css';
+import './styles/showhide.css';
+import './styles/controlled.css';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
