@@ -25,15 +25,17 @@ const UseStateCounter = () => {
 
 
     return (
-    <div className="counter">
-      <h1>{ count }</h1>
-      <div className="btn">
-            <button onClick={handleMinus}>-</button>
-            <button onClick={handleResus}>reset</button>
-            <button onClick={handleAddus}>+</button>
+        <>
+        <div className="counter">
+        <h1>{ count }</h1>
+        <div className="btn">
+              <button onClick={handleMinus}>-</button>
+              <button onClick={handleResus}>reset</button>
+              <button onClick={handleAddus}>+</button>
+        </div>
+        
       </div>
-      
-    </div>
+        </>
   )
 }
 
