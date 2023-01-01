@@ -9,7 +9,8 @@ import './styles/Counter.css';
 import './styles/shortcircuit.css';
 import './styles/showhide.css';
 import './styles/controlled.css';
-
+import './styles/useref.css';
+import './styles/usereducer.css'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

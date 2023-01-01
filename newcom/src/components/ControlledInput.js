@@ -18,7 +18,7 @@ const ControlledInput = () => {
             }
         })
     }
-    console.log(input)
+   
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -42,8 +42,7 @@ const ControlledInput = () => {
                 type='text' 
                 name='firstname'
                 value={input.firstname} 
-                onChange={handlechange}
-                autoFocus  
+                onChange={handlechange} 
             />
         </div>
         <div className='form-control'>
