@@ -10,7 +10,8 @@ import './styles/shortcircuit.css';
 import './styles/showhide.css';
 import './styles/controlled.css';
 import './styles/useref.css';
-import './styles/usereducer.css'
+import './styles/usereducer.css';
+import './styles/navbar.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
