@@ -1,0 +1,95 @@
+::before,
+::after,
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4 , button{
+    text-transform:capitalize;
+}
+
+nav{
+    background: linear-gradient(to right , rgb(80, 30, 146), rgb(170, 124, 230));
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    height: 64px;
+
+}
+nav > img{
+    height: 60px;
+    padding: 10px 12px 10px 50px;
+    
+
+}
+nav > h1 {
+    font-size : 24px;
+    color : white;
+    margin-right: auto;
+}
+nav > h4 {
+    font-size: 16px;
+    padding-right:96px;
+    color:white;
+}
+
+/* ######## main ######### */
+main {
+    width : 90%;
+    text-align: center;
+    margin : auto;
+
+}
+main section form  > input{
+    width : 40%;
+    margin-top: 72px;
+    font-size: 16px;
+    margin: 16px 32px;
+    padding: 8px 16px;
+    border-radius: 5px;
+    outline:none;
+    border:1px solid #D5D4D9;
+
+     
+}
+
+
+main section form  > button{
+    width: 86%;
+    height: 64px;
+    display: inline-block;
+    font-size: 32px;
+    margin: 16px 32px;
+    padding: 8px 16px;
+    background: linear-gradient(to left , rgb(80, 30, 146), rgb(170, 124, 230));
+    border-radius: 11px;
+    border : none;
+    color:white;
+    
+}
+form{
+    margin-top:60px;
+    text-align: center;
+    align-items: center;
+}
+form > input{
+    padding: 10px 20px;
+    font-size : 16px;
+    margin: 10px;
+    margin-top:0px;
+}
+form > label{
+    
+    font-size: 16px;
+    text-transform: capitalize;
+    margin: 0;
+    margin-top: 5px;
+}
+form > button {
+
+    padding: 8px 16px;
+    font-size:16px;
+}
