@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
+
 import './styles/index.css';
 import './styles/UseOb.css';
 import './styles/Error.css';
@@ -12,6 +13,10 @@ import './styles/controlled.css';
 import './styles/useref.css';
 import './styles/usereducer.css';
 import './styles/navbar.css';
+import './styles/usecontext.css';
+import './styles/proptypes.css';
+
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
