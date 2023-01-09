@@ -10,6 +10,8 @@ import UseReduce from "./components/UseReduce";
 import Navbar from "./Navbar";
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 import ErrorPage from "./components/ErrorPage";
+import Context from "./components/Context";
+import Proptypes from './components/Proptypes';
 
 
 function App() {
@@ -17,7 +19,7 @@ function App() {
     <Router>
       <Navbar/>
       <Routes>
-        <Route path="/" element={<UseStateCounter/>}/>
+        <Route  path="/" element={<UseStateCounter/>}/>
         <Route path="/useobj" element={<UseStateObj/>}/>       
         <Route path="/useref" element={<UseRef/>}/>
         <Route path="/usearr" element={<UseStateArray/>}/>
@@ -25,12 +27,11 @@ function App() {
         <Route path="/showhide" element={<ShowHide/>}/>
         <Route path="/shortcic" element={<ShortCircuit/>}/>
         <Route path="/control" element={<ControlledInput/>}/>
+        <Route path="/context" element={<Context/>}/>
         <Route path="/errorex" element={<ErrorExample/>}/>
+        <Route path='/proptypes' element={<Proptypes/>}/>
         <Route path="*" element={<ErrorPage/>}/>
       </Routes>
-      
-      
-
     </Router>
   );
 }

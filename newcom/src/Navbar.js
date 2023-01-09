@@ -6,7 +6,7 @@ const Navbar = () => {
     <div className='navBar'>
       <ul>
       <li>
-        <Link to='/'>Home</Link>
+        <Link  to='/'>Home</Link>
       </li>
       <li>
         <Link to='/useref'>Ref</Link>
@@ -28,6 +28,12 @@ const Navbar = () => {
       </li>
       <li>
         <Link to='/usereduce'>UseReduce</Link>
+      </li>
+      <li>
+        <Link to='/context'>Context</Link>
+      </li>
+      <li>
+        <Link to='/proptypes'>Props</Link>
       </li>
       </ul> 
     </div>
