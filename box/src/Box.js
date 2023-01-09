@@ -4,7 +4,7 @@ import './index.css'
 
 
 
-const Box = ({key,on,id,handleColor}) => {
+const Box = ({on,id,handleColor}) => {
  
 
   
@@ -14,7 +14,7 @@ const Box = ({key,on,id,handleColor}) => {
 
 
   return (
-    <div  onClick={() => handleColor(id) } style={styles} key={key} id={id}  className='box' ></div>
+    <div  onClick={() => handleColor(id) } style={styles} id={id}  className='box' ></div>
   )
 }
 

@@ -1,25 +1,29 @@
 import Header  from  './Header';
 import  {useState } from 'react'
 import './header.css';
-import Meme from './Meme';
 import medapps from './medapps.svg';
-import SignUp from './SignUp';
+import Form from './Form';
+
 
 
 function App() {
  
   const [form , setForm]  = useState({
-    'name' : '',
+    'fullname' : '',
     'password':'',
     'confirm': '',
     'joinedNews': false,
   })
+
+
  
   function handleChange(event){
-    const{name, value, type, checked} = event.target
+    const{name, value} = event.target
     setForm(prevForm => {
-         return ({ ...prevForm,
-          [name] : type === 'checkbox' ?  checked :  value})
+         return ({ 
+          ...prevForm,
+          [name] :   value
+        })
         }
       )
   }
@@ -30,9 +34,7 @@ function App() {
   return(
     <div>
       <Header img={medapps}/>
-      <Meme />
-      <SignUp form={form} handleChange={handleChange()}
-      />
+        <Form handleChange={handleChange} form={form}/>
     </div>
   )
 }
