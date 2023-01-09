@@ -1,0 +1,18 @@
+.navBar ul{
+    display : flex;
+    font-size : 2rem;
+    justify-content: center;
+    background-color: rgba(250, 4, 4, 0.4);
+}
+.navBar li {
+    list-style-type: none;
+    
+}
+
+.navBar li a{
+    text-decoration: none;
+    color:red;
+    margin-right: 2rem;
+}
+
+

@@ -9,6 +9,7 @@ import UseRef from "./components/UseRef"
 import UseReduce from "./components/UseReduce";
 import Navbar from "./Navbar";
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
+import ErrorPage from "./components/ErrorPage";
 
 
 function App() {
@@ -16,34 +17,20 @@ function App() {
     <Router>
       <Navbar/>
       <Routes>
-        <Route  exact path="/">
-        <ShowHide/>
-      </Route>
-      <Route path="/about">
-        <UseStateObj/>
-      </Route>
-        <Route path="/usestatearray">
-          <UseStateArray/>
-        </Route>
-        <Route path="/showhide">
-        <UseStateCounter/>
-        </Route>
-        <Route path="/shortcicuit">
-          <ShortCircuit/>
-        </Route>
-        <Route path="/errorexample">
-          <ErrorExample/>
-        </Route>
-        <Route path="/controlled">
-          <ControlledInput/>
-        </Route>
-        <Route path="/useref">
-            <UseRef/>
-        </Route>
-        <Route path="/usereduce">
-          <UseReduce/>
-        </Route>
+        <Route path="/" element={<UseStateCounter/>}/>
+        <Route path="/useobj" element={<UseStateObj/>}/>       
+        <Route path="/useref" element={<UseRef/>}/>
+        <Route path="/usearr" element={<UseStateArray/>}/>
+        <Route path="/usereduce" element={<UseReduce/>}/>
+        <Route path="/showhide" element={<ShowHide/>}/>
+        <Route path="/shortcic" element={<ShortCircuit/>}/>
+        <Route path="/control" element={<ControlledInput/>}/>
+        <Route path="/errorex" element={<ErrorExample/>}/>
+        <Route path="*" element={<ErrorPage/>}/>
       </Routes>
+      
+      
+
     </Router>
   );
 }

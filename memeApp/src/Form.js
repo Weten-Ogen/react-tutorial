@@ -1,17 +1,35 @@
 
 
-const Form = () => {
-  function handleClick(){
-     
-  }
+const Form = ({handleChange, form}) => {
+ 
   return (
-    <section>
-      <form>
-        <input type='text' className="one" ></input>
-        <input type='text' ></input>
-        <button onClick={handleClick()}>get a new meme image</button>
+    <main>
+      <form >
+        <input 
+        type='text' 
+        placeholder="Fullname"
+        className="one"
+        name='fullname'
+        value={form.fullname}
+        onChange={handleChange}
+         />
+        <input 
+        type='password'
+        name='password'
+        value={form.password}
+        placeholder='Password'
+        onChange={handleChange}
+        />
+        <input 
+        type='password'
+        name='confirm'
+        value={form.confirm}
+        placeholder='Password'
+        onChange={handleChange}
+        />
+        <button>Submit</button>
       </form>
-    </section>
+    </main>
   )
 }
 
