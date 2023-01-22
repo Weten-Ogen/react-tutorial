@@ -1,5 +1,4 @@
 import { useSelector } from "react-redux";
-// import { CartIcon } from "../icons";
 import "./style.css";
 
 const Navbar = () => {
