@@ -5,7 +5,7 @@
 /.pnp
 .pnp.js
 /.vscode
-ReactJs.code-workspace
+*.code-workspace
 
 # testing
 /coverage

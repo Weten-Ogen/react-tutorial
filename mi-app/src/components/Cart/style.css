@@ -1,0 +1,44 @@
+
+.cart header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    
+}
+
+
+.cart header h2{
+    font-size: 3rem;
+    letter-spacing: 4px;
+}
+
+footer {
+    text-align: center;
+}
+
+.cart-total h4 {
+    display:flex;
+    text-transform: capitalize;
+    margin: 20px;
+    letter-spacing: 3px;
+    font-size:1rem
+}
+
+.cart-total h4 span {
+    margin-left:auto;
+}
+.clear-btn {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    border-radius:11px;
+    padding: 12px 24px;
+    border : 0.5px solid red;
+    background-color: white;
+    color: red;
+    letter-spacing: 10px;
+    margin : 20px;
+   
+
+}

@@ -1,6 +1,7 @@
 .navBar ul{
     display : flex;
-    font-size : 2rem;
+    width:100%;
+    font-size : 1rem;
     justify-content: center;
     background-color: rgba(250, 4, 4, 0.4);
 }
