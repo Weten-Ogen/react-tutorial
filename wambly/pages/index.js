@@ -6,11 +6,12 @@ const inter = Inter({ subsets: ['latin'] })
 
 
 export async function getServerSideProps(){
-  const data = import('/data/data.json');
-  
+  const { events_categories}  = await import('/data/data.json');
+
+
   return{
     props:{
-      title: "hello everyone",
+      data : events_categories
 
     }
   }
@@ -21,7 +22,7 @@ export async function getServerSideProps(){
 
 
 
-export default function Home({title}) {
+export default function Home({data}) {
   return (
     <>
       <Head>
@@ -37,21 +38,27 @@ export default function Home({title}) {
         </nav>
       <header className='w-full'>
       </header>
+
       <main className='my-5 px-3'>
-      <a href='/events/london' className='w-full text-leading '>
-        <Image/>
-        <h2 className='font-bold text-2xl py-2'>{title}</h2>
-       
-      </a>
-      <a href='/events/sanfran' className='w-full text-leading '>
-        <img />
-        <h2 className='font-bold text-2xl py-2'>Events in San Francisco</h2>
-        
-      </a>
-      <a href='/events/barcelona' className='w-full text-leading '>
-        <img />
-        <h2 className='font-bold text-2xl py-2'>Events in Barcelona</h2>
-      </a>
+      {
+        data.map(ev => 
+          <a
+           key={ev.id} 
+           href={`/events/${ev.id}`}
+           >
+            <Image 
+            src={`/${ev.image}`} 
+            alt={ev.id}
+            width={500}
+            height={200}
+            className='py-5 w-full object-cover h-[500px]'
+            />
+
+            <h2 className='text-2xl px-3 font-bold text-leading underline text-[blue]'>{ev.title}</h2>
+            <p className='max-w-[900px] '>{ev.description}</p>
+          </a>
+        )
+      }
       </main>
     </>
   )

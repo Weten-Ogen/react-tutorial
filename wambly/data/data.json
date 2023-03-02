@@ -1,10 +1,10 @@
 {
-    "events-cartegories": [
+    "events_categories": [
         {
             "id"  : "london",
             "title" : "Event in London",
             "description" : "lorem ipsium sioej iifheij lieiinrioejieiafnigingnvenfi ji ianeinij ehafin li nfaijl nn ienaig nin n agmizngieagn gineagnnig ni ngeaflorem ipsium sioej iifheij lieiv inrioej ieiafni gingnvenfi ji ianeiniehafin li nfaijl nn ienaig nin n agmizngieagn gi neagn nig ni ngeaflorem ipsium sioej iifheij lieivinrioej ieiafni gingnvenfi ji ianeinij ehafin li nfaijl nn ienaig nin n agmizngieagn gi neagn nig ni ngeaf",
-            "image": "blog.jpg"
+            "image": "blog-1.jpg"
         },
         {
             "id"  : "san francisco",

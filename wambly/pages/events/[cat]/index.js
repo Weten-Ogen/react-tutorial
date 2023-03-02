@@ -8,12 +8,12 @@ const EventCatPage = () => {
             </nav>
             <div className="mx-4">
                 <h1 className="font-bold text-3xl ">Our Events in London</h1>
-                <a className="block py-2 font-semibold" href="/event/event1">Event 1</a>
-                <a className="block py-2 font-semibold" href="/event/event2">Event 2</a>
-                <a className="block py-2 font-semibold" href="/event/event3">Event 3</a>
-                <a className="block py-2 font-semibold" href="/event/event4">Event 4</a>
-                <a className="block py-2 font-semibold" href="/event/event5">Event 5</a>
-                <a className="block py-2 font-semibold" href="/event/event6">Event 6</a>
+                <a className="block py-2 font-semibold" href="/events/1">Event 1</a>
+                <a className="block py-2 font-semibold" href="/events/2">Event 2</a>
+                <a className="block py-2 font-semibold" href="/event/3">Event 3</a>
+                <a className="block py-2 font-semibold" href="/event/4">Event 4</a>
+                <a className="block py-2 font-semibold" href="/event/5">Event 5</a>
+                <a className="block py-2 font-semibold" href="/event/6">Event 6</a>
 
             </div>
         </div>
