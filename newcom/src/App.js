@@ -16,8 +16,9 @@ import Proptypes from './components/Proptypes';
 
 function App() {
   return (
+    
     <Router>
-      <Navbar/>
+    <Navbar/>
       <Routes>
         <Route  path="/" element={<UseStateCounter/>}/>
         <Route path="/useobj" element={<UseStateObj/>}/>       

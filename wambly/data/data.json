@@ -1,0 +1,142 @@
+{
+    "events_categories": [
+        {
+            "id"  : "london",
+            "title" : "Event in London",
+            "description" : "lorem ipsium sioej iifheij lieiinrioejieiafnigingnvenfi ji ianeinij ehafin li nfaijl nn ienaig nin n agmizngieagn gineagnnig ni ngeaflorem ipsium sioej iifheij lieiv inrioej ieiafni gingnvenfi ji ianeiniehafin li nfaijl nn ienaig nin n agmizngieagn gi neagn nig ni ngeaflorem ipsium sioej iifheij lieivinrioej ieiafni gingnvenfi ji ianeinij ehafin li nfaijl nn ienaig nin n agmizngieagn gi neagn nig ni ngeaf",
+            "image": "blog-1.jpg"
+        },
+        {
+            "id"  : "san francisco",
+            "title" : "Event in San Francisco",
+            "description" : "lorem ipsium mizngieagn gineagnnig ni ngeaflorem ipsium sioej iifheij lieiv inrioej ieiafni gingnvenfi ji ianeiniehafin li nfaijl nn ienaig nin n agmizngieagn gi neagn nig ni ngeaflorem ipsium sioej iifheij lieivinrioej ieiafni gingnvenfi ji ianeinij ehafin li nfaijl nn ienaig nin n agmizngieagn gi neagn nig ni ngeaf",
+            "image": "blog-4.jpg"
+        },
+        {
+            "id"  : "Barcelona",
+            "title" : "Event in Barcelona",
+            "description" : "lorem ipsium sioej iifheij lieiinrioejieiafnigingnvenfi ji ianeinij ehafin li nfaijl nn ienaig nin n agmizngieagn gineagnnig ni ngeaflorem ipsium sioej iifheij lieiv inrioej ieiafni gingnvenfi ji ianeiniehafin li nfaijl nn ienaig nin n agmizngieagn gi neagn nig ni ngeaflorem ipsium sioe nn ienaig nin n agmizngieagn gi neagn nig ni ngeaf",
+            "image": "blog-2.jpg"
+        }
+    ],
+    "allEvents": [
+        {
+            "id": "lodon-grynfinddor-concept",
+            "title":  "lodon-grynfinddor-concept",
+            "city" : "london",
+            "description" : "uma patronus expecmum aneo h dous hsoeu l hoe " ,
+            "image" : "gryffindor.png",
+            "email_registered": []
+        },
+        {
+            "id": "barcelona-grynfinddor-concept",
+            "title":  "barcelona-grynfinddor-concept",
+            "city" : "barcelona",
+            "description" : "uma patronus expecmum aneo h dous hsoeu l hoe " ,
+            "image" : "gryffindor2.png",
+            "email_registered": []
+        },
+        {
+            "id": "san-grynfinddor-concept",
+            "title":  "san-grynfinddor-concept",
+            "city" : "san francisco",
+            "description" : "uma patronus expecmum aneo h dous hsoeu l hoe " ,
+            "image" : "gryffindor.png",
+            "email_registered": [
+                "harrypotter@gryffindor.wiz",
+                "draco@slytherin.wiz"
+            ]
+        },
+        {
+            "id": "lodon-slytherin-concept",
+            "title":  "lodon-slytherin-concept",
+            "city" : "london",
+            "description" : "u woe fhoa hen onveo noe o jl lore" ,
+            "image" : "slytherin.png",
+            "email_registered": [
+                "harrypotter@gryffindor.wiz",
+                "cho@ravenclaw.wiz",
+                "draco@slytherin.wiz"
+            ]
+        },
+        {
+            "id": "san-slytherin-concept",
+            "title":  "san-slytherin-concept",
+            "city" : "san francisco",
+            "description" : "u woe fhoa hen onveo noe o jl lore" ,
+            "image" : "slytherin.png",
+            "email_registered": [
+                "marcuoware@gmail.com",
+                "ronweasly@gryffindor.wiz",
+                "harrypotter@gryffindor.wiz"]
+        },
+        {
+            "id": "barcelona-slytherin-concept",
+            "title":  "barcelona-slytherin-concept",
+            "city" : "barcelona",
+            "description" : "u woe fhoa hen onveo noe o jl lore" ,
+            "image" : "slytherin.png",
+            "email_registered": [
+                "harrypotter@gryffindor.wiz",
+                "cho@ravenclaw.wiz",
+                "draco@slytherin.wiz",
+                "lunalovegood@hufflepuff.wiz"
+            ]
+        },
+        {
+            "id": "ranvenclaw",
+            "title":  "ranvenclaw",
+            "city" : "london",
+            "description" : "uma patronus expecmum aneo h dous hsoeu l hoe  felae ofhnoe lan oe no jfn o nfo he ofjah oj",
+            "image" : "ravenclaw.png",
+            "email_registered": [
+                "marcuoware@gmail.com",
+                "ronweasly@gryffindor.wiz",
+                "harrypotter@gryffindor.wiz",
+                "cho@ravenclaw.wiz",
+                "draco@slytherin.wiz",
+                "lunalovegood@hufflepuff.wiz"
+            ]
+        },
+        {
+            "id": "ranvenclaw",
+            "title":  "ranvenclaw",
+            "city" : "barcelona",
+            "description" : "uma patronus expecmum aneo h dous hsoeu l hoe  felae ofhnoe lan oe no jfn o nfo he ofjah oj",
+            "image" : "ravenclaw.png",
+            "email_registered": [
+                "marcuoware@gmail.com",
+                "ronweasly@gryffindor.wiz",
+                "harrypotter@gryffindor.wiz",
+                "lunalovegood@hufflepuff.wiz"
+            ]
+        },
+        {
+            "id": "ranvenclaw",
+            "title":  "ranvenclaw",
+            "city" : "san francisco",
+            "description" : "uma patronus expecmum aneo h dous hsoeu l hoe  felae ofhnoe lan oe no jfn o nfo he ofjah oj",
+            "image" : "ravenclaw.png",
+            "email_registered": [
+               
+                "harrypotter@gryffindor.wiz",
+                "cho@ravenclaw.wiz",
+                "draco@slytherin.wiz",
+                "lunalovegood@hufflepuff.wiz"
+            ]
+        },
+        {
+            "id": "san-hufflepuff",
+            "title":  "san-hufflepuff",
+            "city" : "san francisco",
+            "description" : "uma patronus expecmum aneo h dous hsoeu l hoe " ,
+            "image" : "gryffindor.png",
+            "email_registered": [
+                "marcuoware@gmail.com",
+                "ronweasly@gryffindor.wiz",
+                "ginnyweasly@gryffindor.wiz"
+            ]
+        }
+        
+    ]
+}
