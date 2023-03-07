@@ -1,4 +1,31 @@
-const EventCatPage = () => {
+import Image from 'next/image'
+
+export async function getStaticProps(context){
+    const id = context?.params.cat;
+    const {allEvents} = await import('/data/data.json')
+
+    const data = allEvents.filter(ev => ev.city === id)
+
+    return { props:{ data}};
+}
+
+export async function getStaticPaths() {
+    const { events_categories } = await import('/data/data.json')
+    const allPaths = events_categories.map(ev => {
+        return {
+            params: {
+                cat:ev.id.toString(),
+            }
+        }
+    })
+    return {
+        paths: allPaths,
+        fallback: false,
+    }
+}
+
+
+const EventCatPage = ({data}) => {
     return (
         <div>
             <nav className='w-[80%] my-2 mx-auto text-center'>
@@ -6,18 +33,20 @@ const EventCatPage = () => {
                 <a className='px-2 text-md' href='/about-us'>About- us</a>
                 <a className='  px-2 text-md' href='/events'>Events</a>
             </nav>
-            <div className="mx-4">
-                <h1 className="font-bold text-3xl ">Our Events in London</h1>
-                <a className="block py-2 font-semibold" href="/events/1">Event 1</a>
-                <a className="block py-2 font-semibold" href="/events/2">Event 2</a>
-                <a className="block py-2 font-semibold" href="/event/3">Event 3</a>
-                <a className="block py-2 font-semibold" href="/event/4">Event 4</a>
-                <a className="block py-2 font-semibold" href="/event/5">Event 5</a>
-                <a className="block py-2 font-semibold" href="/event/6">Event 6</a>
-
+            <div className="py-3">
+                {
+                    data.map(ev => {
+                        <a key={ev.id} className='block' href={`/events/${ev.city}/${ev.id}`}>
+                            <Image src={`/${ev.image}`} alt={`${ev.title}`} height="400" width="500"/>
+                            <h2>{ev.title}</h2>
+                            <p>{ev.description}</p>
+                        </a>
+                    })
+                }
             </div>
         </div>
     )
 }
 
 export default EventCatPage;
+

@@ -1,7 +1,15 @@
+import Image from 'next/image'
 
+export async function getStaticProps() {
+    const {events_categories} = await import('/data/data.json')
+    return {
+        props:{
+            data:events_categories, 
+        }
+    }
+}
 
-
-export const EventsPage = () => {
+export const EventsPage = ({data}) => {
     
     return (
         <div>
@@ -11,26 +19,15 @@ export const EventsPage = () => {
                 <a className='  px-2 text-md' href='/events'>Events</a>
             </nav>
             <div>
-                <h1 className='font-bold text-2xl py-2 underline'>Events Page</h1>
-
-                <a href='' className='w-full text-leading '>
-                 {''}
-                    <img/>
-                    <h2 className='font-bold text-2xl py-2'>Events in San Francisco </h2>
-                 {''}
-                </a>
-                <a href='' className='w-full text-leading '>
-                 {''}
-                    <img/>
-                    <h2 className='font-bold text-2xl py-2'>Events in Barcelona</h2>
-                 {''}
-                </a>
-                <a href='' className='w-full text-leading '>
-                 {''}
-                    <img/>
-                    <h2 className='font-bold text-2xl py-2'>Events in San Francisco</h2>
-                 {''}
-                </a>
+                {
+                    data.map(ev =>( 
+                        <a  className='m-2 block' href={`/events/${ev.id}`}>
+                        <Image src={`/${ev.image}`} width="400" height="200" className='object-cover  h-300' alt={ev.id}/>
+                        <h2 className='text-3xl text-blue-600 underline py-2' >{ev.title}</h2>
+                        </a>
+                    ))
+                }
+               
             </div>
         </div>
     )
