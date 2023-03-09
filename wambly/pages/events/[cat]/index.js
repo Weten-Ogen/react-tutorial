@@ -22,7 +22,6 @@ const EventCatPage = ({data,pageName:id}) => {
                     <Image src={`/${ev.image}`} width="312" height={300} className="object-cover "/>
                     <h2 className='text-bold text-3xl underline text-blue-600'>{ev.title}</h2>
                     <p className='text-lg text-slate-700'>{ev.description}</p>
-                        
                     </Link>
                     
                 ))
