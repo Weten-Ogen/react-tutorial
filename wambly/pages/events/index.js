@@ -1,4 +1,6 @@
 import Image from 'next/image'
+import Header from '@/src/components/header/header';
+import Footer from '@/src/components/footer/footer';
 
 export async function getStaticProps() {
     const {events_categories} = await import('/data/data.json')
@@ -13,11 +15,7 @@ export const EventsPage = ({data}) => {
     
     return (
         <div>
-            <nav className='w-[80%] my-2 mx-auto text-center'>
-                <a className='px-2 text-md' href='/'>Home</a>
-                <a className='px-2 text-md' href='/about-us'>About- us</a>
-                <a className='  px-2 text-md' href='/events'>Events</a>
-            </nav>
+           <Header/>
             <div>
                 {
                     data.map(ev =>( 
@@ -29,6 +27,7 @@ export const EventsPage = ({data}) => {
                 }
                
             </div>
+            <Footer/>
         </div>
     )
 }

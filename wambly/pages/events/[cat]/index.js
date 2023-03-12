@@ -1,19 +1,16 @@
 import Image from 'next/image'
 import Link from 'next/link';
-
+import Header from '@/src/components/header/header';
+import Footer from '@/src/components/footer/footer';
 
 
 const EventCatPage = ({data,pageName:id}) => {
     
     return (
         <div>
-            <nav className='w-[80%] my-2 mx-auto text-center'>
-                <a className='px-2 text-md' href='/'>Home</a>
-                <a className='px-2 text-md' href='/about-us'>About- us</a>
-                <a className='  px-2 text-md' href='/events'>Events</a>
-            </nav>
+            <Header/>
             <div className="py-3">
-            <h1 className='text-red-600 text-4xl text-center underline text-leading capitalize'>Events in { id }</h1>
+            <h1 className='text-yellow-600 text-4xl text-center underline text-leading capitalize'>Events in { id }</h1>
 
             {
                 data.map(ev => (
@@ -27,6 +24,7 @@ const EventCatPage = ({data,pageName:id}) => {
                 ))
                 }
             </div>
+            <Footer/>
         </div>
     )
 }
