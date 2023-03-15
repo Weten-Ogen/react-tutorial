@@ -35,13 +35,7 @@ export async function getStaticProps(context){
 const EventPage = ({data}) => {
     
     return (
-        <>
-
-            <Header/>
-            <SingleEvent data={data}/>
-            <Footer/>
-        </>
-       
+        <SingleEvent data={data}/>
     )
 }
 

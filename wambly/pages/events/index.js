@@ -15,7 +15,6 @@ export const EventsPage = ({data}) => {
     
     return (
         <div>
-           <Header/>
             <div>
                 {
                     data.map(ev =>( 
@@ -27,7 +26,6 @@ export const EventsPage = ({data}) => {
                 }
                
             </div>
-            <Footer/>
         </div>
     )
 }

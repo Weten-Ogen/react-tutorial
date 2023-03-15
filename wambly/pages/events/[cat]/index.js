@@ -8,7 +8,7 @@ const EventCatPage = ({data,pageName:id}) => {
     
     return (
         <div>
-            <Header/>
+           
             <div className="py-3">
             <h1 className='text-yellow-600 text-4xl text-center underline text-leading capitalize'>Events in { id }</h1>
 
@@ -24,7 +24,7 @@ const EventCatPage = ({data,pageName:id}) => {
                 ))
                 }
             </div>
-            <Footer/>
+           
         </div>
     )
 }
