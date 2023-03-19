@@ -1,14 +1,11 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { Inter } from '@next/font/google'
-
-const inter = Inter({ subsets: ['latin'] })
-
+import HomePage from '../src/components/home/home_page';
+import Footer from '../src/components/footer/footer'
+import Header from '../src/components/header/header'
 
 export async function getServerSideProps(){
-  const { events_categories}  = await import('/data/data.json');
-
-
+  const { events_categories}  = await import('/data/data.json')
   return{
     props:{
       data : events_categories
@@ -31,35 +28,8 @@ export default function Home({data}) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <nav className='w-[80%] my-2 mx-auto text-center'>
-          <a className='px-2 text-md' href='/'>Home</a>
-          <a className='px-2 text-md' href='/about-us'>About-us</a>
-          <a className='px-2 text-md' href='/events'>Events</a>
-        </nav>
-      <header className='w-full'>
-      </header>
-
-      <main className='my-5 px-3'>
-      {
-        data.map(ev => 
-          <a
-           key={ev.id} 
-           href={`/events/${ev.id}`}
-           >
-            <Image 
-            src={`/${ev.image}`} 
-            alt={ev.id}
-            width={500}
-            height={200}
-            className='py-5 w-full object-cover h-[500px]'
-            />
-
-            <h2 className='text-2xl px-3 font-bold text-leading underline text-[blue]'>{ev.title}</h2>
-            <p className='max-w-[900px] '>{ev.description}</p>
-          </a>
-        )
-      }
-      </main>
+     
+      <HomePage data={data}/>
     </>
   )
 }

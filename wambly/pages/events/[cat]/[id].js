@@ -1,13 +1,41 @@
-const EventPage = () => {
+import Header from '@/src/components/header/header';
+import Footer from '@/src/components/footer/footer';
+import SingleEvent from '@/src/components/events/single_event';
+
+
+export async function getStaticPaths(){
+    const {allEvents} = await import('/data/data.json');
+    const allPaths = allEvents.map( path => {
+        return{
+            params:{
+                cat: path.city,
+                id: path.id,
+            }
+        }
+    });
+    return {
+        paths: allPaths,
+        fallback: false,
+    }
+}
+
+export async function getStaticProps(context){
+    const id = context.params.id;
+    const {allEvents} = await import('/data/data.json');
+    const evenData = allEvents.find(ev => ev.id === id )
+    return {
+        props:{
+            data:evenData,
+        }
+    }
+}
+
+
+
+const EventPage = ({data}) => {
+    
     return (
-        <div>
-            <nav className='w-[80%] my-2 mx-auto text-center'>
-                <a className='px-2 text-md' href='/'>Home</a>
-                <a className='px-2 text-md' href='/events/:id/about-us'>About- us</a>
-                <a className='  px-2 text-md' href='/events'>Events</a>
-            </nav>
-            <h1>Our Single Event</h1>
-        </div>
+        <SingleEvent data={data}/>
     )
 }
 
